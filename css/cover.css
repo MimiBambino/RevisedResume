@@ -54,24 +54,18 @@ body {
   font-family: Montez;
   font-size: 6em;
   color: black;
-  top: 50px;
-  left: 50px;
+  top: 70px;
+  left: 90px;
 }
 
 #title {
  position: absolute;
- top: 140px;
- left: 150px;
+ top: 145px;
+ left: 200px;
  color: black;
 }
 
-#navbox {
-  position: fixed;
-  background: black;
-  width: 5px;
-  height: 100%;
-  right: 0;
-}
+
 
 #right-dec, #left-dec, #top-dec {
   position: fixed;
@@ -86,8 +80,19 @@ body {
 
 #right-dec {
   background-image: url("../img/blackScallopSmall.png");
-  right:0;
+  right: -10px;
+}
 
+#left-dec {
+  background-image: url("../img/leftScallop.png");
+  left: -10px;
+}
+
+#top-dec {
+  width: 100%;
+  background-image: url("../img/topScallop.png");
+  height: 20px;
+  top: -5px;
 }
 
 #lady {
@@ -112,6 +117,15 @@ body {
   height: 6em;
   background-image: url("../img/arrow.png");
   background-size: contain;
+}
+
+#scroll {
+  position: fixed;
+  bottom: 1.5%;
+  right: 14%;
+  font-family: Montez;
+  font-size: 2.5em;
+  color: black;
 }
 
 /*
