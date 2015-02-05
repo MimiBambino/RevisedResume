@@ -1,0 +1,208 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: rgba(183,222,237,1);
+/* Old Browsers */background: -moz-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(172,217,233,1) 6%, rgba(0,140,176,1) 99%, rgba(0,140,176,1) 99%, rgba(183,222,237,1) 100%);
+ /* FF3.6+ */background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(6%, rgba(172,217,233,1)), color-stop(99%, rgba(0,140,176,1)), color-stop(99%, rgba(0,140,176,1)), color-stop(100%, rgba(183,222,237,1)));
+/* Chrome, Safari4+ */background: -webkit-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(172,217,233,1) 6%, rgba(0,140,176,1) 99%, rgba(0,140,176,1) 99%, rgba(183,222,237,1) 100%);
+ /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(172,217,233,1) 6%, rgba(0,140,176,1) 99%, rgba(0,140,176,1) 99%, rgba(183,222,237,1) 100%);
+ /* Opera 11.10+ */background: -ms-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(172,217,233,1) 6%, rgba(0,140,176,1) 99%, rgba(0,140,176,1) 99%, rgba(183,222,237,1) 100%);
+ /* IE 10+ */background: linear-gradient(135deg, rgba(183,222,237,1) 0%, rgba(172,217,233,1) 6%, rgba(0,140,176,1) 99%, rgba(0,140,176,1) 99%, rgba(183,222,237,1) 100%);
+/* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=1 );
+/* IE6-9 fallback on horizontal gradient */
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+#name-container {
+  position: relative;
+}
+
+#name {
+  position: absolute;
+  font-family: Montez;
+  font-size: 6em;
+  color: black;
+  top: 50px;
+  left: 50px;
+}
+
+#title {
+ position: absolute;
+ top: 140px;
+ left: 150px;
+ color: black;
+}
+
+#navbox {
+  position: fixed;
+  background: black;
+  width: 5px;
+  height: 100%;
+  right: 0;
+}
+
+#right-dec, #left-dec, #top-dec {
+  position: fixed;
+}
+
+#right-dec, #left-dec {
+  background-repeat: repeat-y;
+  bottom:0;
+  height: 100%;
+  width:20px;
+}
+
+#right-dec {
+  background-image: url("../img/blackScallopSmall.png");
+  right:0;
+
+}
+
+#lady {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+}
+
+@-webkit-keyframes bounce {
+  0% { bottom: 5px; }
+  25%, 75% { bottom: 15px; }
+  50% { bottom: 20px; }
+  100% { bottom: 0; }
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  right: 10%;
+  margin-left:-20px;
+  width: 6em;
+  height: 6em;
+  background-image: url("../img/arrow.png");
+  background-size: contain;
+}
+
+/*
+ * Adding the animation to our element
+*/
+.bounce {
+  -webkit-animation:bounce 1s infinite;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  #name {
+    font-size: 5em;
+  }
+}
