@@ -13,7 +13,6 @@
     <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-  <link rel="stylesheet" type="text/css" href="css/examples.css" />
     <!-- Custom styles for this template -->
   <link href="css/cover.css" rel="stylesheet">
 
@@ -33,17 +32,46 @@
     });
   </script>
   </head>
-  <body id="fullpage">
-    <div id="right-dec">
-    </div>
+
+  <body>
+
+    <div id="right-dec"></div>
     <div id='left-dec'></div>
-    <div id='top-dec'></div>
-    <h3 id='name' class="masthead-brand">Cynthia O'Donnell</h3>
-    <h3 id='title'>JavaScript Web Developer</h3>
-    <img id="lady" src="img/womanAtLaptop.png"></img>
-<h4 id="scroll">Scroll</h4>
-<div class="arrow bounce"></div>
+    <div id="fullpage">
+      <div class="section " id="section0">
+        <div id='top-dec'></div>
+        <h3 id='name'>Cynthia O'Donnell</h3>
+        <h3 id='title'>JavaScript Web Developer</h3>
+        <img id="lady" src="img/womanAtLaptop.png"></img>
+      </div>
+      <div class="section" id="section1">
+        <h3 id="projects">My Projects</h3>
+        <img src='img/DinoMap.png' alt='Dinosaur Map'></img>
+        <div><a href="http://mimibambino.github.io/DinosaurMap/">Visit Site</a>
+        <a href="https://github.com/MimiBambino/DinosaurMap">View Code</a></div>
+        <img src='img/TreasureHunt.png' alt='An HTML5 Game'></img>
+        <div><a href="http://mimibambino.github.io/DinosaurMap/">Visit Site</a>
+        <a href="https://github.com/MimiBambino/DinosaurMap">View Code</a></div>
+        <img src='img/InteractiveResume.png' alt='An Interactive Resume built with JavaScript'></img>
+        <div><a href="http://mimibambino.github.io/DinosaurMap/">Visit Site</a>
+        <a href="https://github.com/MimiBambino/DinosaurMap">View Code</a></div>
+      </div>
+    <div class="section" id="section2">
+      <div id="about">
+        <h1>About Me</h1>
+        <p>I'm Cynthia O'Donnell, a JavaScript Web Developer and this is my portfolio page. Most of these projects were created for Udacity's Frontend Web Developer Nanodegree. My favorite is the Dinosaur Map. I made it for my four-year-old son who, naturally, loves dinosaurs. Click on the image to visit the live version and on the GitHub icon to visit the repository. As I create more projects, I will add them here.</p>
+        <br class="hide-on-med-and-down">
+        <p class="hide-on-med-and-down">I live in Pozzuoli, Italy, with my husband and our two young children. We are a military family; my husband is active duty U.S. Navy and I am also a Navy veteran.  After the Navy, I attended Law School at the University of Florida and practiced as a Bankruptcy Attorney in Hawaii.  Yes, we move a lot. Shortly after my first child was born, we moved to Hamburg, Germany where I began learning programming and web development.</p>
+        <br>
+        <p class="hide-on-small-only">I love to make things, from websites to knitted hats for my kids to Ikea furniture.  I am very interested in building websites that have to do with children's education as well as government and law. If you share these interests or just want to let me know what you think of my work, feel free to contact me.</p>
+      </div>
+
+    <!-- <div id='bottom-dec'></div> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    </div>
+
+     <h4 id="scroll">Scroll</h4>
+    <div class="arrow bounce"></div>
     <script src="scripts/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
