@@ -11,10 +11,11 @@
     <title>Cynthia O'Donnell Resume</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="css/examples.css" />
     <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+  <link href="css/cover.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,8 +23,17 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="scripts/examples.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage();
+    });
+  </script>
   </head>
-  <body>
+  <body id="fullpage">
     <div id="right-dec">
     </div>
     <div id='left-dec'></div>
